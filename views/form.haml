@@ -1,0 +1,25 @@
+.form#order-form
+  .wrapper
+
+    .form-thank-you
+      .thank-you-text
+        .bolder.big Спасибо!
+        Мы свяжемся с вами в ближайшем будущем на планете Земля!
+
+
+    .form-block
+      .form-title
+        Оставьте заявку сейчас
+        %br
+        и мы с вами свяжемся в течение дня
+
+
+      %form
+        %input{type: :text, name: :username, placeholder: 'Как вас зовут?'}
+        %input{type: :text, name: :phone, placeholder: 'Ваш номер телефона'}
+        %input.last{type: :text, name: :email, placeholder: 'Ваш e-mail'}
+        %input.long{type: :text, name: :message, placeholder: 'Введите ваше сообщение'}
+        .add-message
+          Добавить сообщение
+        .button.centered#order-button
+          Отправить

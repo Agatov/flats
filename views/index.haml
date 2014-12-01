@@ -1,0 +1,297 @@
+= haml :modal
+
+#intro
+  .wrapper
+    .topbar
+      %ul.navigation
+        %li
+          %a{href: '#'} Инфраструктура
+        %li
+          %a{href: '#'} Документы
+        %li
+          %a{href: '#'} Планировки
+        %li
+          %a{href: '#'} Цены
+        %li
+          %a{href: '#'} Ипотека
+      .phone
+        (918) 272 77 77
+        .small
+          Ежедневно с 9:00 до 21:00
+
+
+    .title
+      Жилой комплекс «Мир»
+
+    .mini
+      Новый комплекс класса Комфорт+ 
+      %br
+      в двух минутах от ТРЦ «Красная Площадь»
+
+
+    .take-call-button#rent-button
+      Заказать консультацию  
+
+    .triggers
+      .trigger
+        %img{src: '/images/icon-star-white.png'}
+        Оригинальный проект, монолитная технология строительства 
+
+      .trigger
+        %img{src: '/images/icon-star-white.png'}
+        Функциональные планировки с возможностью объединения 
+
+      .trigger
+        %img{src: '/images/icon-star-white.png'}
+        Бесшумные лифты KONE 
+
+      .trigger
+        %img{src: '/images/icon-star-white.png'}
+        Благоустроенная территория, детские и спортивные площадки 
+
+%section
+  .wrapper
+    .title
+      О комплексе
+
+    #about.clearfix
+      .photos
+        .big-photo
+          %a{href: '/images/renders/20.jpg', 'data-lightbox' => 'about'}
+            %img{src: '/images/big_photo.png'}
+        .previews
+          .preview
+            %a{href: '/images/renders/20.jpg', 'data-lightbox' => 'about'}
+              %img{src: '/images/preview1.png'}
+          .preview
+            %a{href: '/images/renders/23.jpg', 'data-lightbox' => 'about'}
+              %img{src: '/images/preview2.png'}
+          .preview
+            %a{href: '/images/renders/22.jpg', 'data-lightbox' => 'about'}
+              %img{src: '/images/preview3.png'}
+          .preview
+            %a{href: '/images/renders/21.jpg', 'data-lightbox' => 'about'}
+              %img{src: '/images/preview4.png'}
+
+      .text
+        %p
+          Жилой комплекс «Мир» расположен в одном из самых перспективных и экологически чистых районов г. Краснодар – районе Энки и ТРЦ «Красная Площадь».
+
+        %p
+          Комплекс представляет собой жилой микрорайон, состоящий из восьми 16-ти этажных домов, выполненных по оригинальному проекту и построенных по монолитной технологии. Особый шарм комплексу придают фасады, выполненные с использованием керамогранита и композитных материалов от ведущих мировых производителей, а также витражное остекление квартир и балконов.
+
+        %p
+          Первые этажи отведены исключительно под коммерческое использование, где в каждом помещение предусмотрены отдельный вход, витражные окна и свободная планировка. Также предусмотрена возможность увелечения мощности электроснабжения (кВт).
+
+        %p
+          В каждом подъезде 4 бесшумных лифта – 2 пассажирских и 2 грузопассажирских – от одного из ведущих мировых производителей – компании KONE.
+
+        %p
+          Помимо многочисленных наземных гостевых парковочных мест проектом предусмотрено строительство 2 подземных паркингов суммарной вместимостью 254 машино/мест.
+
+        Места отдыха и досуга включают не только детские и спортивные площадки, но и специализированные игровые зоны для детей самого младшего возраста, а также площадки для отдыха взрослых.
+
+-#.form-block
+  .wrapper
+    .offer
+      Забронируйте себе квартиру прямо сейчас!
+
+    .form-thank-you Спасибо за обращение! Наш менеджер свяжется с вами через 15 минут
+
+    .form.clearfix{form_id: '1'}
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+      %button.order-button Оставить заявку
+
+
+%section.striped
+  .wrapper
+    .title Инфраструктура
+    .map-tabs.clearfix
+      .tab.active{rel: 'schools'}
+        Школы
+      .tab{rel: 'minischools'}
+        Детские сады
+      .tab{rel: 'sections'}
+        Детские секции
+      .tab{rel: 'shops'}
+        Магазины и аптеки
+      .tab{rel: 'dosug'}
+        Досуг, развлечения, здравоохранение
+
+
+#map2
+
+.form-block.blue
+  .wrapper
+    .offer
+      Узнай, как купить квартиру уже сегодня 
+      %br
+      всего за 148 800 рублей!
+
+    .form.clearfix{form_id: '1'}
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+      %button.order-button УЗНАТЬ
+
+%section.striped
+  .wrapper
+    .about.clearfix
+      .left
+        .name
+          Планировки
+        .text
+          %p
+            Комплекс строится поэтапно. Строительство 1-ой очереди предусматривает возведение трех 16-ти этажных корпусов.
+
+          %p
+            Квартиры расположены со второго по шестнадцатый этаж. Планировки продуманы и функциональны – без «мертвых», темных и прочих бесполезных зон, которые могли бы сказаться на стоимости покупки.
+
+          %p
+            Высота потолков 2.80 м.
+
+          %p
+            Объединение смежных квартир – возможно в любой момент и технологически предусмотрено!
+
+      .right
+        .plan
+          %a.marker.marker1{href: '/images/corp1web300.png', 'data-lightbox' => 'corp1plan'}
+          .marker.marker2
+          .marker.marker3
+          .marker.marker4
+          .marker.marker5
+          .marker.marker6
+          .marker.marker7
+          .marker.marker8
+        .legends.clearfix
+          .legend.clearfix
+            .pic
+            .desc
+              Доступно для покупки
+
+          .legend.clearfix
+            .pic.blue
+            .desc
+              Заложен фундамент
+
+          .legend.clearfix
+            .pic.gray
+            .desc
+              В проекте
+
+
+%section
+  .wrapper
+    .title Выберите планировку, чтобы узнать стоимость квартиры
+
+    .prices-tabs.clearfix
+      .tab.active{rel: 2010} 20,10 м2
+      .tab{rel: 2320} 23,20 м2
+      .tab{rel: 2460} 24,60 м2
+      .tab{rel: 2600} 26,00 м2
+      .tab{rel: 2650} 26,50 м2
+      .tab{rel: 4790} 47,90 м2
+
+    = haml :'plans/plan2010'
+    = haml :'plans/plan2320'
+    = haml :'plans/plan2460'
+    = haml :'plans/plan2600'
+    = haml :'plans/plan2650'
+    = haml :'plans/plan4790'
+
+
+%section.striped
+  .wrapper
+    .title
+      О компании застройщике
+
+    #about-company.clearfix
+      .text
+        %p
+          Строительно-инвестиционная компания «Остринский» образована в 2012 году в г. Сочи путем слияния двух строительных компаний – ООО «Остринский» и ООО «Альянс XXI век» – и зарекомендовала себя на сочинском рынке недвижимости как один из самых надежных застройщиков многоквартирных домов формата «Бизнес» и «Бизнес+».
+        %p
+          В активе компании – более десятка успешно реализованных проектов в границах Большого Сочи (от Адлера и Красной Поляны до Центрального района г. Сочи). Суммарная площадь возведенных жилых домов и административных зданий (включая проекты на финальной стадии готовности) уверенно приближается к отметке в 150 000 кв.м.
+
+        Жилой комплекс «Мир» – это новый проект компании «Остринский» и первый в Краснодаре.
+
+      .documents
+        .document
+          .icon
+          %a{href: '#'}
+            Документы
+            %br
+            ООО «Остринский»
+
+        .document
+          .icon
+          %a{href: '#'}
+            Документы
+            %br
+            ООО «Альянс ХХI век»
+
+.form-block.blue
+  .wrapper
+    .offer
+      Узнай, как купить квартиру с выгодой до 397 000 рублей!
+
+    .form.clearfix{form_id: '1'}
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
+      %button.order-button УЗНАТЬ
+
+
+%section
+  .wrapper
+    .title
+      Документы
+
+    .documents.clearfix
+      .document.clearfix
+        .icon
+        %a{href: '#'}
+          Разрешение на строительство
+
+      .document.clearfix
+        .icon
+        %a{href: '#'}
+          Свидетельство на землю
+
+      .document.clearfix
+        .icon
+        %a{href: '#'}
+          Проектная декларация
+
+      .document.clearfix
+        .icon
+        %a{href: '#'}
+          Кадастровый паспорт
+
+      .document.clearfix
+        .icon
+        %a{href: '#'}
+          Генеральный план
+
+#map-wrapper
+  #map
+  #some-block
+    .header
+      Наши контакты
+    .line
+
+    .block
+      .label
+        Телефон отдела продаж
+      .phone
+        (918) 272-77-77
+
+    .block
+      .label
+        E-mail
+      .value
+        sales@ostrinskiy.ru
+
+    .block
+      .label
+        Адрес офиса продаж
+      .value
+        г. Краснодар, ул. Дальняя 39/3

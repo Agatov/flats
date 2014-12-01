@@ -1,0 +1,534 @@
+@font-face
+  font-family: 'HelveticaNeue-Light'
+  src: url('/fonts/HelveticaNeueCyr-Light.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Regular'
+  src: url('/fonts/HelveticaNeueCyr-Roman.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Thin'
+  src: url('/fonts/HelveticaNeueCyr-Thin.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-UltraLight'
+  src: url('/fonts/HelveticaNeueCyr-UltraLight.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Medium'
+  src: url('/fonts/HelveticaNeueCyr-Medium.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+body
+  padding: 0px
+  margin: 0px
+  font-family: 'HelveticaNeue-Light', 'Helvetica', 'Arial', sans-serif
+  min-width: 1150px
+  color: #4A4A4A
+
+.wrapper
+  width: 940px
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.relative
+  position: relative
+
+.hidden
+  display: none
+
+.inheritance-height
+  height: 100%
+
+
+a
+  color: blue
+
+
+section
+  padding: 75px 0
+
+  &.striped
+    background: #f7f7f7
+
+  .title
+    height: 50px
+    line-height: 50px
+    font-size: 32px
+    font-family: "HelveticaNeue-Thin"
+    margin-bottom: 50px
+    color: #372D2C
+
+    &.small
+      font-size: 24px
+      line-height: 30px
+
+    &.min-margin-bottom
+      margin-bottom: 25px
+
+  .subtitle
+    font-size: 18px
+    line-height: 24px
+    color: #4F5254
+    text-align: center
+
+
+strong
+  font-family: 'HelveticaNeue-Regular'
+
+
+//@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic)
+.price-rouble:after
+  font-family: "PT Sans"
+  content: " \20B7"
+
+.about
+  .left
+    float: left
+    width: 300px
+
+    .name
+      font-size: 24px
+      color: #372D2D
+      margin-bottom: 50px
+
+    .text
+      font-size: 15px
+      line-height: 20px
+      color: #372D2D
+
+      p
+        margin-bottom: 15px
+
+  .right
+    float: right
+    width: 620px
+
+    .plan
+      position: relative
+      width: 620px
+      height: 420px
+      background: url('/images/plan.jpg') no-repeat
+      background-size: 100%
+
+      .marker
+        width: 34px
+        height: 55px
+
+        &.marker1
+          position: absolute
+          top: 235px
+          left: 275px
+          background: url('/images/marker1.png') no-repeat
+          background-size: 100%
+
+        &.marker2
+          position: absolute
+          top: 150px
+          left: 160px
+          background: url('/images/marker2.png') no-repeat
+          background-size: 100%
+
+        &.marker3
+          position: absolute
+          top: 90px
+          left: 75px
+          background: url('/images/marker3.png') no-repeat
+          background-size: 100%
+
+        &.marker4
+          position: absolute
+          top: 37px
+          left: 178px
+          background: url('/images/marker4.png') no-repeat
+          background-size: 100%
+
+        &.marker5
+          position: absolute
+          top: -5px
+          left: 270px
+          background: url('/images/marker5.png') no-repeat
+          background-size: 100%
+
+        &.marker6
+          position: absolute
+          top: 40px
+          left: 360px
+          background: url('/images/marker6.png') no-repeat
+          background-size: 100%
+
+        &.marker7
+          position: absolute
+          top: 100px
+          left: 470px
+          background: url('/images/marker7.png') no-repeat
+          background-size: 100%
+
+        &.marker8
+          position: absolute
+          top: 160px
+          left: 378px
+          background: url('/images/marker8.png') no-repeat
+          background-size: 100%
+
+    .legends
+      margin-top: 25px
+      .legend
+        float: left
+        margin-right: 20px
+        width: 140px
+        height: 40px
+        .pic
+          float: left
+          width: 40px
+          height: 40px
+          background: #7ED320
+
+          &.blue
+            background: #4990E2
+
+          &.gray
+            background: #9B9B9B
+        .desc
+          float: right
+          width: 90px
+          padding-top: 10px
+          font-size: 14px
+          color: #4A4A4A
+
+
+.prices-tabs
+  margin-bottom: 50px
+  .tab
+    float: left
+    margin-right: 20px
+    width: 138px
+    height: 50px
+    line-height: 50px
+    text-align: center
+    font-size: 16px
+
+    border: 1px solid #4990E2
+    color: #4990E2
+    cursor: pointer
+
+    &:hover
+      background: #4990E2
+      color: #fff
+
+    &.active
+      background: #4990E2
+      color: #fff
+
+    &:nth-child(6n)
+      margin-right: 0px
+
+
+
+
+.flat-plan
+
+  display: none
+
+  .image
+    float: left
+    margin-right: 20px
+    width: 300px
+    height: 368px
+    background: url('/images/flat-plan.png') no-repeat
+    background-size: 100%
+
+    &.p2010
+      background: url('/images/plans/20-10.png') no-repeat
+      background-size: 100%
+
+    &.p2320
+      background: url('/images/plans/23-20.png') no-repeat
+      background-size: 100%
+
+    &.p2460
+      background: url('/images/plans/24-60.png') no-repeat
+      background-size: 100%
+
+    &.p2600
+      background: url('/images/plans/26-00.png') no-repeat
+      background-size: 100%
+
+    &.p2650
+      background: url('/images/plans/26-50.png') no-repeat
+      background-size: 100%
+
+    &.p4790
+      background: url('/images/plans/47-90.png') no-repeat
+      background-size: 100%
+
+  .chars
+    float: left
+    margin-right: 20px
+    width: 300px
+    height: 368px
+
+    .name
+      font-family: 'HelveticaNeue-Regular'
+      font-size: 18px
+      color: #4A4A4A
+      margin-bottom: 40px
+
+    table
+      tr
+        td
+          height: 40px
+          vertical-align: middle
+          font-size: 16px
+          color: #4A4A4A
+
+          &:nth-child(1n)
+            width: 160px
+
+  .prices
+    float: left
+    width: 300px
+    height: 368px
+    position: relative
+
+
+    .price
+      margin-bottom: 40px
+
+      .label
+        font-size: 14px
+        color: #4A4A4A
+        margin-bottom: 10px
+
+      .number
+        font-family: 'HelveticaNeue-Regular'
+        font-size: 32px
+        color: #4990E2
+
+        small
+          font-size: 24px
+
+
+    .ololo
+      font-size: 14px
+      color: #4A4A4A
+      line-height: 1.7
+
+
+    .button
+
+      position: absolute
+      left: 0px
+      bottom: 0px
+
+      width: 300px
+      height: 80px
+
+      text-align: center
+      line-height: 80px
+
+      background: #4990E2
+
+      font-family: 'HelveticaNeue-Light'
+      font-size: 24px
+
+      color: #fff
+
+      cursor: pointer
+
+      &:hover
+        background: #fff
+        color: #4990E2
+        border: 1px solid #4990E2
+
+
+
+#about
+  .photos
+    float: left
+    width: 380px
+
+    .big-photo
+      width: 380px
+      height: 240px
+      margin-bottom: 20px
+
+    .previews
+      .preview
+        float: left
+        width: 180px
+        height: 120px
+        margin-right: 20px
+        margin-bottom: 20px
+
+        &:nth-child(2n)
+          margin-right: 0px
+
+
+  .text
+    float: right
+    width: 540px
+    font-size: 15px
+    line-height: 20px
+    color: #372D2D
+
+    p
+      margin-bottom: 15px
+
+#about-company
+
+  .text
+    float: left
+    width: 620px
+    font-size: 15px
+    line-height: 22px
+    color: #372D2D
+
+    p
+      margin-bottom: 25px
+
+  .documents
+    float: right
+    width: 220px
+
+    .document
+      margin-bottom: 40px
+      .icon
+        width: 66px
+        height: 81px
+        float: none
+        background: #ccc
+        margin-bottom: 10px
+        background: url('/images/pdf-red.png') no-repeat
+        background-size: 100%
+
+      a
+        color: #59A3E8
+        font-size: 16px
+        line-height: 24px
+        text-decoration: underline
+
+
+.documents
+  .document
+    float: left
+    width: 220px
+    margin-right: 60px
+    margin-bottom: 40px
+    .icon
+      float: left
+      margin-right: 20px
+      width: 60px
+      height: 60px
+      background: #ccc
+      margin-bottom: 10px
+
+    a
+      color: #59A3E8
+      font-size: 16px
+      line-height: 24px
+      text-decoration: underline
+
+
+#map-wrapper
+  position: relative
+  width: 100%
+  height: 500px
+  background: #ccc
+
+  #map
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 500px
+    z-index: 1
+
+  #some-block
+    position: absolute
+    top: 100px
+    right: 100px
+    width: 320px
+    height: 270px
+    background: #4990E2
+    z-index: 2
+
+    padding: 20px
+
+    .header
+      font-size: 24px
+      color: #fff
+
+    .line
+      border-bottom: 1px solid #fff
+
+    .block
+      margin-top: 25px
+      color: #fff
+
+      .label
+        font-size: 14px
+        font-family: 'HelveticaNeue-Light'
+        margin-bottom: 10px
+
+      .phone
+        font-size: 24px
+        font-family: 'HelveticaNeue-Regular'
+
+      .value
+        font-size: 16px
+        font-family: 'HelveticaNeue-Regular'
+
+
+.map-tabs
+  margin-bottom: 0px
+  .tab
+    float: left
+    margin-right: 20px
+    padding: 0px 10px
+    height: 50px
+    line-height: 50px
+    text-align: center
+    font-size: 16px
+
+    border: 1px solid #4990E2
+    color: #4990E2
+    cursor: pointer
+
+    &:hover
+      background: #4990E2
+      color: #fff
+
+    &.active
+      background: #4990E2
+      color: #fff
+
+    &:nth-child(6n)
+      margin-right: 0px
+
+#map2
+  width: 100%
+  height: 600px
+  background: #eaeaea
+  border: 1px solid #ccc
+
+
+
+

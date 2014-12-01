@@ -1,0 +1,11 @@
+%html
+  %head
+    = css :application
+    %script{src: 'http://api-maps.yandex.ru/2.1/?lang=ru_RU'}
+    = js :application
+    %title
+      Продажа квартир
+  %body
+    = yield
+    -#= haml :modal
+    = erb :metrika
