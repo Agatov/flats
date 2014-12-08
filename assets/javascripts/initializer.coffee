@@ -1,5 +1,8 @@
 $ ->
 
+  $('.navigation li a').on 'click', ->
+    $('body').animate({scrollTop: $("##{$(@).attr('rel')}").offset().top}, 'slow')
+
   $('.prices-tabs .tab').on 'click', ->
     $('.flat-plan').hide()
     $(".flat-plan[anchor=#{$(@).attr('rel')}]").show()

@@ -5,17 +5,18 @@
     .topbar
       %ul.navigation
         %li
-          %a{href: '#'} Инфраструктура
+          %a{href: '#', rel: 'about'} О комплексе
         %li
-          %a{href: '#'} Документы
+          %a{href: '#', rel: 'infra'} Инфраструктура
         %li
-          %a{href: '#'} Планировки
+          %a{href: '#', rel: 'plans'} Планировки
         %li
-          %a{href: '#'} Цены
+          %a{href: '#', rel: 'prices'} Цены
         %li
-          %a{href: '#'} Ипотека
+          %a{href: '#', rel: 'company'} О компании
+
       .phone
-        (918) 272 77 77
+        7 (918) 035 71 91
         .small
           Ежедневно с 9:00 до 21:00
 
@@ -49,7 +50,7 @@
         %img{src: '/images/icon-star-white.png'}
         Благоустроенная территория, детские и спортивные площадки 
 
-%section
+%section#about
   .wrapper
     .title
       О комплексе
@@ -104,10 +105,10 @@
       %button.order-button Оставить заявку
 
 
-%section.striped
+%section.striped#infra
   .wrapper
     .title Инфраструктура
-    .map-tabs.clearfix
+    -#.map-tabs.clearfix
       .tab.active{rel: 'schools'}
         Школы
       .tab{rel: 'minischools'}
@@ -119,6 +120,16 @@
       .tab{rel: 'dosug'}
         Досуг, развлечения, здравоохранение
 
+    .map-columns.clearfix
+      %ul.map-column.schools
+        %li.first Образование
+      %ul.map-column.dosug
+        %li.first Досуг
+      %ul.map-column.sport
+        %li.first Спорт
+      %ul.map-column.health
+        %li.first Здоровье
+
 
 #map2
 
@@ -127,14 +138,14 @@
     .offer
       Узнай, как купить квартиру уже сегодня 
       %br
-      всего за 148 800 рублей!
+      всего за 337 000 рублей!
 
     .form.clearfix{form_id: '1'}
       %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
       %input{type: :text, name: :phone, placeholder: 'Введите ваш телефон'}
       %button.order-button УЗНАТЬ
 
-%section.striped
+%section.striped#plans
   .wrapper
     .about.clearfix
       .left
@@ -180,7 +191,7 @@
               В проекте
 
 
-%section
+%section#prices
   .wrapper
     .title Выберите планировку, чтобы узнать стоимость квартиры
 
@@ -200,7 +211,7 @@
     = haml :'plans/plan4790'
 
 
-%section.striped
+%section.striped#company
   .wrapper
     .title
       О компании застройщике
