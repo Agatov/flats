@@ -34,11 +34,36 @@ class Application < Sinatra::Base
     haml :index
   end
 
-  get '/public/topsalon_plan_razvitiya.pdf' do
-    send_file File.join('public', 'topsalon_plan_razvitiya.pdf')
+  get '/public/presentation.pdf' do
+    send_file File.join('public', 'presentation.pdf')
+  end
+
+  get '/public/svidetelstvo.pdf' do
+    send_file File.join('public', 'presentation.pdf')
+  end
+
+  get '/public/razreshenie.pdf' do
+    send_file File.join('public', 'presentation.pdf')
   end
 
   post '/orders.json' do
+
+    message = "#{params[:order][:username]}. #{params[:order][:phone]}"
+
+    Pony.mail ({
+      to: 'sales@ostrinskiy.ru, abardacha@gmail.com',
+      subject: I18n.t('email.title', locale: 'ru'),
+      body: message,
+      via: :smtp,
+      via_options: {
+        address: 'smtp.gmail.com',
+        port: 587,
+        enable_starttls_auto: true,
+        user_name: 'ostrinsky.notifier@gmail.com',
+        password: 'qwe123rt',
+        authentication: :plain
+      }
+    })
 
     content_type :json
     {status: :success}.to_json

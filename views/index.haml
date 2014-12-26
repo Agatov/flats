@@ -107,17 +107,6 @@
 %section.striped#infra
   .wrapper
     .title Инфраструктура
-    -#.map-tabs.clearfix
-      .tab.active{rel: 'schools'}
-        Школы
-      .tab{rel: 'minischools'}
-        Детские сады
-      .tab{rel: 'sections'}
-        Детские секции
-      .tab{rel: 'shops'}
-        Магазины и аптеки
-      .tab{rel: 'dosug'}
-        Досуг, развлечения, здравоохранение
 
     .map-columns.clearfix
       %ul.map-column.schools
@@ -213,7 +202,7 @@
 %section.striped#company
   .wrapper
     .title
-      О компании застройщике
+      О компании
 
     #about-company.clearfix
       .text
@@ -227,7 +216,7 @@
       .documents
         .document
           .icon
-          %a{href: '#'}
+          %a{href: '/public/presentation.pdf', target: '_blank'}
             Презентация 
             %br
             о компании
@@ -256,6 +245,11 @@
         .icon
         %a{href: '#'}
           Свидетельство на землю
+
+      .document.clearfix
+        .icon
+        %a{href: '#'}
+          Разрешение на строительство
 
 #map-wrapper
   #map
