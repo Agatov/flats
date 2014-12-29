@@ -29,7 +29,7 @@
       в двух минутах от ТРЦ «Красная Площадь»
 
 
-    .take-call-button#rent-button
+    .take-call-button.rent-button
       Заказать консультацию  
 
     .triggers
@@ -243,13 +243,18 @@
 
       .document.clearfix
         .icon
-        %a{href: '#'}
+        %a{href: '/public/svidetelstvo.pdf', target: '_blank'}
           Свидетельство на землю
 
       .document.clearfix
         .icon
-        %a{href: '#'}
+        %a{href: '/public/razreshenie.pdf', target: '_blank'}
           Разрешение на строительство
+
+      .document.clearfix
+        .icon
+        %a{href: '/public/ekspertiza.pdf', target: '_blank'}
+          Экспертиза
 
 #map-wrapper
   #map

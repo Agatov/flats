@@ -42,7 +42,7 @@ $ ->
   $('#hide-thank-you').on 'click', ->
     close_thank_you()
 
-  $('#rent-button').on 'click', ->
+  $('.rent-button').on 'click', ->
     show_modal()
 
     $('.modal-overlay').on 'click', ->
