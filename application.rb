@@ -39,11 +39,11 @@ class Application < Sinatra::Base
   end
 
   get '/public/svidetelstvo.pdf' do
-    send_file File.join('public', 'presentation.pdf')
+    send_file File.join('public', 'svidetelstvo.pdf')
   end
 
   get '/public/razreshenie.pdf' do
-    send_file File.join('public', 'presentation.pdf')
+    send_file File.join('public', 'razreshenie.pdf')
   end
 
   get '/public/ekspertiza.pdf' do
