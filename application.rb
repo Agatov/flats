@@ -50,6 +50,11 @@ class Application < Sinatra::Base
     send_file File.join('public', 'ekspertiza.pdf')
   end
 
+  get '/public/declaraciya.pdf' do
+    send_file File.join('public', 'declaraciya.pdf')
+  end
+
+  
   post '/orders.json' do
 
     message = "#{params[:order][:username]}. #{params[:order][:phone]}"
